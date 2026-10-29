@@ -1,0 +1,44 @@
+{
+  "engine": "Apache Spark 3.5.1 / PySpark",
+  "dag_stages": [
+    {
+      "stage_id": 0,
+      "name": "ScanCSV[nyc_trips_scaled.csv]",
+      "partitions": 8,
+      "shuffle_read_bytes": 0,
+      "tasks": "MapPartitionsRDD -> Project -> Filter"
+    },
+    {
+      "stage_id": 1,
+      "name": "BroadcastExchange[taxi_zone_lookup.csv, census_acs.csv]",
+      "type": "BroadcastHashJoin",
+      "optimization": "Zero shuffle on large trip dataset; small metadata broadcast to all executors."
+    },
+    {
+      "stage_id": 2,
+      "name": "Aggregate[groupBy(PULocationID, Borough)]",
+      "shuffle_write_records": 71,
+      "aggregations": [
+        "count(trip_id)",
+        "avg(wait_time)",
+        "approx_percentile(wait_time, 0.90)"
+      ]
+    },
+    {
+      "stage_id": 3,
+      "name": "Lakehouse Parquet Sink",
+      "partition_by": [
+        "Borough"
+      ],
+      "compression": "snappy",
+      "acid_ready": true
+    }
+  ],
+  "cluster_specs": {
+    "driver_memory": "4GB",
+    "executor_instances": 4,
+    "executor_cores": 2,
+    "executor_memory": "4GB",
+    "spark_adaptive_enabled": true
+  }
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "micro_batch_id": 1,
+    "timestamp_offset_sec": 10,
+    "manhattan_avg_wait_min": 3.79,
+    "bronx_avg_wait_min": 8.52,
+    "wait_time_gap_min": 4.74,
+    "disparate_impact_ratio": 0.708,
+    "drift_detected": true
+  },
+  {
+    "micro_batch_id": 2,
+    "timestamp_offset_sec": 20,
+    "manhattan_avg_wait_min": 3.79,
+    "bronx_avg_wait_min": 8.47,
+    "wait_time_gap_min": 4.68,
+    "disparate_impact_ratio": 0.711,
+    "drift_detected": true
+  },
+  {
+    "micro_batch_id": 3,
+    "timestamp_offset_sec": 30,
+    "manhattan_avg_wait_min": 3.79,
+    "bronx_avg_wait_min": 8.5,
+    "wait_time_gap_min": 4.71,
+    "disparate_impact_ratio": 0.71,
+    "drift_detected": true
+  },
+  {
+    "micro_batch_id": 4,
+    "timestamp_offset_sec": 40,
+    "manhattan_avg_wait_min": 3.8,
+    "bronx_avg_wait_min": 8.55,
+    "wait_time_gap_min": 4.75,
+    "disparate_impact_ratio": 0.707,
+    "drift_detected": true
+  },
+  {
+    "micro_batch_id": 5,
+    "timestamp_offset_sec": 50,
+    "manhattan_avg_wait_min": 3.82,
+    "bronx_avg_wait_min": 12.04,
+    "wait_time_gap_min": 8.22,
+    "disparate_impact_ratio": 0.492,
+    "drift_detected": true
+  },
+  {
+    "micro_batch_id": 6,
+    "timestamp_offset_sec": 60,
+    "manhattan_avg_wait_min": 3.79,
+    "bronx_avg_wait_min": 12.02,
+    "wait_time_gap_min": 8.23,
+    "disparate_impact_ratio": 0.492,
+    "drift_detected": true
+  },
+  {
+    "micro_batch_id": 7,
+    "timestamp_offset_sec": 70,
+    "manhattan_avg_wait_min": 3.82,
+    "bronx_avg_wait_min": 11.99,
+    "wait_time_gap_min": 8.17,
+    "disparate_impact_ratio": 0.495,
+    "drift_detected": true
+  },
+  {
+    "micro_batch_id": 8,
+    "timestamp_offset_sec": 80,
+    "manhattan_avg_wait_min": 3.78,
+    "bronx_avg_wait_min": 11.97,
+    "wait_time_gap_min": 8.2,
+    "disparate_impact_ratio": 0.495,
+    "drift_detected": true
+  },
+  {
+    "micro_batch_id": 9,
+    "timestamp_offset_sec": 90,
+    "manhattan_avg_wait_min": 3.79,
+    "bronx_avg_wait_min": 8.48,
+    "wait_time_gap_min": 4.69,
+    "disparate_impact_ratio": 0.711,
+    "drift_detected": true
+  },
+  {
+    "micro_batch_id": 10,
+    "timestamp_offset_sec": 100,
+    "manhattan_avg_wait_min": 3.81,
+    "bronx_avg_wait_min": 8.53,
+    "wait_time_gap_min": 4.72,
+    "disparate_impact_ratio": 0.709,
+    "drift_detected": true
+  }
+]

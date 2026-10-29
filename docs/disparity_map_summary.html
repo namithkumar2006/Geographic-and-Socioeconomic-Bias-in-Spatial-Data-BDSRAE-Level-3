@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NYC Rideshare Geographic & Socioeconomic Disparity Dashboard</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; margin: 20px; background-color: #f8f9fa; color: #212529; }
+        .header { background: #1a365d; color: white; padding: 24px; border-radius: 8px; margin-bottom: 24px; }
+        .card { background: white; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.08); }
+        .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 20px; }
+        .metric-box { background: #edf2f7; padding: 16px; border-radius: 6px; text-align: center; border-left: 4px solid #3182ce; }
+        .metric-val { font-size: 26px; font-weight: bold; margin-top: 6px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 14px; }
+        th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid #e2e8f0; }
+        th { background-color: #f1f5f9; font-weight: 600; color: #475569; }
+        tr:hover { background-color: #f8fafc; }
+        .alert-box { background: #fff5f5; border: 1px solid #feb2b2; color: #c53030; padding: 12px 16px; border-radius: 6px; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>NYC Spatial Mobility & Socioeconomic Bias Dashboard</h1>
+        <p>Big Data Systems & Responsible AI Engineering (Topic 20) | Team: Namith Kumar C & Jayanth K</p>
+    </div>
+
+    <div class="grid">
+        <div class="metric-box">
+            <div>Baseline Disparate Impact</div>
+            <div class="metric-val" style="color: #e53e3e;">0.629 (Violated)</div>
+        </div>
+        <div class="metric-box">
+            <div>Post-Policy Disparate Impact</div>
+            <div class="metric-val" style="color: #38a169;">1.444 (Compliant)</div>
+        </div>
+        <div class="metric-box">
+            <div>Spatial Gini Inequality</div>
+            <div class="metric-val">0.732 &rarr; 0.679</div>
+        </div>
+        <div class="metric-box">
+            <div>Outer-Borough Wait Reduction</div>
+            <div class="metric-val" style="color: #3182ce;">-38.4%</div>
+        </div>
+    </div>
+
+    <div class="alert-box">
+        <strong>Statutory Fairness Finding:</strong> Baseline free-market ride dispatch violates the EEOC 80% Rule (DIR = 0.629). Our Proposed Dynamic Equity Incentive Policy rebalances driver allocations and successfully brings all zones into regulatory compliance while preserving 93.8% platform revenue efficiency.
+    </div>
+
+    <div class="card">
+        <h2>Zone-Level Spatial & Demographic Disparity Table (Sample 30 Zones)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Zone ID</th>
+                    <th>Borough</th>
+                    <th>Neighborhood Zone</th>
+                    <th>Median Income</th>
+                    <th>Baseline Wait</th>
+                    <th>Post-Policy Wait</th>
+                    <th>Trips / 1k Pop</th>
+                    <th>Equity Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr>
+            <td>1</td>
+            <td><strong>Manhattan</strong></td>
+            <td>Financial District North</td>
+            <td>$145,000</td>
+            <td>3.52 m</td>
+            <td><strong style="color:#007bff">3.67 m</strong></td>
+            <td>165.3</td>
+            <td><span style="color:green;">Advantaged</span></td>
+        </tr>
+        
+        <tr>
+            <td>2</td>
+            <td><strong>Manhattan</strong></td>
+            <td>Financial District South</td>
+            <td>$152,000</td>
+            <td>3.51 m</td>
+            <td><strong style="color:#007bff">3.65 m</strong></td>
+            <td>238.8</td>
+            <td><span style="color:green;">Advantaged</span></td>
+        </tr>
+        
+        <tr>
+            <td>3</td>
+            <td><strong>Manhattan</strong></td>
+            <td>Midtown Center</td>
+            <td>$138,000</td>
+            <td>3.56 m</td>
+            <td><strong style="color:#007bff">3.70 m</strong></td>
+            <td>305.3</td>
+            <td><span style="color:green;">Advantaged</span></td>
+        </tr>
+        
+        <tr>
+            <td>4</td>
+            <td><strong>Manhattan</strong></td>
+            <td>Midtown East</td>
+            <td>$142,000</td>
+            <td>3.55 m</td>
+            <td><strong style="color:#007bff">3.69 m</strong></td>
+            <td>288.9</td>
+            <td><span style="color:green;">Advantaged</span></td>
+        </tr>
+        
+        <tr>
+            <td>5</td>
+            <td><strong>Manhattan</strong></td>
+            <td>Upper East Side South</td>
+            <td>$165,000</td>
+            <td>3.48 m</td>
+            <td><strong style="color:#007bff">3.62 m</strong></td>
+            <td>163.7</td>
+            <td><span style="color:green;">Advantaged</span></td>
+        </tr>
+        
+        <tr>
+            <td>6</td>
+            <td><strong>Manhattan</strong></td>
+            <td>Upper East Side North</td>
+            <td>$158,000</td>
+            <td>3.49 m</td>
+            <td><strong style="color:#007bff">3.63 m</strong></td>
+            <td>156.3</td>
+            <td><span style="color:green;">Advantaged</span></td>
+        </tr>
+        
+        <tr>
+            <td>7</td>
+            <td><strong>Manhattan</strong></td>
+            <td>Upper West Side South</td>
+            <td>$148,000</td>
+            <td>3.51 m</td>
+            <td><strong style="color:#007bff">3.65 m</strong></td>
+            <td>140.6</td>
+            <td><span style="color:green;">Advantaged</span></td>
+        </tr>
+        
+        <tr>
+            <td>8</td>
+            <td><strong>Manhattan</strong></td>
+            <td>Upper West Side North</td>
+            <td>$135,000</td>
+            <td>3.58 m</td>
+            <td><strong style="color:#007bff">3.73 m</strong></td>
+            <td>197.0</td>
+            <td><span style="color:green;">Advantaged</span></td>
+        </tr>
+        
+        <tr>
+            <td>9</td>
+            <td><strong>Manhattan</strong></td>
+            <td>Chelsea</td>
+            <td>$132,000</td>
+            <td>3.60 m</td>
+            <td><strong style="color:#007bff">3.74 m</strong></td>
+            <td>208.1</td>
+            <td><span style="color:green;">Advantaged</span></td>
+        </tr>
+        
+        <tr>
+            <td>10</td>
+            <td><strong>Manhattan</strong></td>
+            <td>Greenwich Village</td>
+            <td>$140,000</td>
+            <td>3.54 m</td>
+            <td><strong style="color:#007bff">3.68 m</strong></td>
+            <td>294.0</td>
+            <td><span style="color:green;">Advantaged</span></td>
+        </tr>
+        
+        <tr>
+            <td>11</td>
+            <td><strong>Manhattan</strong></td>
+            <td>SoHo</td>
+            <td>$155,000</td>
+            <td>3.49 m</td>
+            <td><strong style="color:#007bff">3.63 m</strong></td>
+            <td>257.5</td>
+            <td><span style="color:green;">Advantaged</span></td>
+        </tr>
+        
+        <tr>
+            <td>12</td>
+            <td><strong>Manhattan</strong></td>
+            <td>Tribeca</td>
+            <td>$185,000</td>
+            <td>3.43 m</td>
+            <td><strong style="color:#007bff">3.57 m</strong></td>
+            <td>154.9</td>
+            <td><span style="color:green;">Advantaged</span></td>
+        </tr>
+        
+        <tr>
+            <td>13</td>
+            <td><strong>Manhattan</strong></td>
+            <td>East Village</td>
+            <td>$102,000</td>
+            <td>3.76 m</td>
+            <td><strong style="color:#007bff">3.91 m</strong></td>
+            <td>258.3</td>
+            <td><span style="color:green;">Advantaged</span></td>
+        </tr>
+        
+        <tr>
+            <td>14</td>
+            <td><strong>Manhattan</strong></td>
+            <td>Lower East Side</td>
+            <td>$58,000</td>
+            <td>4.22 m</td>
+            <td><strong style="color:#007bff">4.39 m</strong></td>
+            <td>170.9</td>
+            <td><span style="color:green;">Advantaged</span></td>
+        </tr>
+        
+        <tr>
+            <td>15</td>
+            <td><strong>Manhattan</strong></td>
+            <td>East Harlem South</td>
+            <td>$39,000</td>
+            <td>4.62 m</td>
+            <td><strong style="color:#007bff">3.20 m</strong></td>
+            <td>21.2</td>
+            <td><span style="color:red;font-weight:bold;">Underserved</span></td>
+        </tr>
+        
+        <tr>
+            <td>16</td>
+            <td><strong>Manhattan</strong></td>
+            <td>East Harlem North</td>
+            <td>$34,000</td>
+            <td>4.83 m</td>
+            <td><strong style="color:#007bff">3.20 m</strong></td>
+            <td>19.9</td>
+            <td><span style="color:red;font-weight:bold;">Underserved</span></td>
+        </tr>
+        
+        <tr>
+            <td>17</td>
+            <td><strong>Manhattan</strong></td>
+            <td>Central Harlem South</td>
+            <td>$52,000</td>
+            <td>4.29 m</td>
+            <td><strong style="color:#007bff">3.20 m</strong></td>
+            <td>32.9</td>
+            <td><span style="color:red;font-weight:bold;">Underserved</span></td>
+        </tr>
+        
+        <tr>
+            <td>18</td>
+            <td><strong>Manhattan</strong></td>
+            <td>Central Harlem North</td>
+            <td>$46,000</td>
+            <td>4.44 m</td>
+            <td><strong style="color:#007bff">3.20 m</strong></td>
+            <td>22.0</td>
+            <td><span style="color:red;font-weight:bold;">Underserved</span></td>
+        </tr>
+        
+        <tr>
+            <td>19</td>
+            <td><strong>Manhattan</strong></td>
+            <td>Washington Heights South</td>
+            <td>$51,000</td>
+            <td>4.34 m</td>
+            <td><strong style="color:#007bff">3.20 m</strong></td>
+            <td>21.0</td>
+            <td><span style="color:red;font-weight:bold;">Underserved</span></td>
+        </tr>
+        
+        <tr>
+            <td>20</td>
+            <td><strong>Manhattan</strong></td>
+            <td>Washington Heights North</td>
+            <td>$48,000</td>
+            <td>4.43 m</td>
+            <td><strong style="color:#007bff">3.20 m</strong></td>
+            <td>30.3</td>
+            <td><span style="color:red;font-weight:bold;">Underserved</span></td>
+        </tr>
+        
+        <tr>
+            <td>21</td>
+            <td><strong>Manhattan</strong></td>
+            <td>Inwood</td>
+            <td>$45,000</td>
+            <td>4.57 m</td>
+            <td><strong style="color:#007bff">3.20 m</strong></td>
+            <td>14.6</td>
+            <td><span style="color:red;font-weight:bold;">Underserved</span></td>
+        </tr>
+        
+        <tr>
+            <td>22</td>
+            <td><strong>Brooklyn</strong></td>
+            <td>Brooklyn Heights</td>
+            <td>$142,000</td>
+            <td>4.77 m</td>
+            <td><strong style="color:#007bff">4.96 m</strong></td>
+            <td>37.6</td>
+            <td><span style="color:green;">Advantaged</span></td>
+        </tr>
+        
+        <tr>
+            <td>23</td>
+            <td><strong>Brooklyn</strong></td>
+            <td>DUMBO</td>
+            <td>$168,000</td>
+            <td>4.65 m</td>
+            <td><strong style="color:#007bff">4.84 m</strong></td>
+            <td>38.1</td>
+            <td><span style="color:green;">Advantaged</span></td>
+        </tr>
+        
+        <tr>
+            <td>24</td>
+            <td><strong>Brooklyn</strong></td>
+            <td>Park Slope</td>
+            <td>$136,000</td>
+            <td>4.77 m</td>
+            <td><strong style="color:#007bff">4.96 m</strong></td>
+            <td>61.2</td>
+            <td><span style="color:green;">Advantaged</span></td>
+        </tr>
+        
+        <tr>
+            <td>25</td>
+            <td><strong>Brooklyn</strong></td>
+            <td>Williamsburg North</td>
+            <td>$115,000</td>
+            <td>4.87 m</td>
+            <td><strong style="color:#007bff">5.07 m</strong></td>
+            <td>38.7</td>
+            <td><span style="color:green;">Advantaged</span></td>
+        </tr>
+        
+        <tr>
+            <td>26</td>
+            <td><strong>Brooklyn</strong></td>
+            <td>Williamsburg South</td>
+            <td>$42,000</td>
+            <td>5.77 m</td>
+            <td><strong style="color:#007bff">3.58 m</strong></td>
+            <td>31.0</td>
+            <td><span style="color:red;font-weight:bold;">Underserved</span></td>
+        </tr>
+        
+        <tr>
+            <td>27</td>
+            <td><strong>Brooklyn</strong></td>
+            <td>Bedford</td>
+            <td>$62,000</td>
+            <td>5.37 m</td>
+            <td><strong style="color:#007bff">5.58 m</strong></td>
+            <td>46.4</td>
+            <td><span style="color:green;">Advantaged</span></td>
+        </tr>
+        
+        <tr>
+            <td>28</td>
+            <td><strong>Brooklyn</strong></td>
+            <td>Stuyvesant Heights</td>
+            <td>$56,000</td>
+            <td>5.48 m</td>
+            <td><strong style="color:#007bff">3.40 m</strong></td>
+            <td>37.0</td>
+            <td><span style="color:red;font-weight:bold;">Underserved</span></td>
+        </tr>
+        
+        <tr>
+            <td>29</td>
+            <td><strong>Brooklyn</strong></td>
+            <td>Crown Heights North</td>
+            <td>$58,000</td>
+            <td>5.43 m</td>
+            <td><strong style="color:#007bff">5.65 m</strong></td>
+            <td>26.9</td>
+            <td><span style="color:green;">Advantaged</span></td>
+        </tr>
+        
+        <tr>
+            <td>30</td>
+            <td><strong>Brooklyn</strong></td>
+            <td>Crown Heights South</td>
+            <td>$51,000</td>
+            <td>5.54 m</td>
+            <td><strong style="color:#007bff">3.43 m</strong></td>
+            <td>24.0</td>
+            <td><span style="color:red;font-weight:bold;">Underserved</span></td>
+        </tr>
+        
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
+    

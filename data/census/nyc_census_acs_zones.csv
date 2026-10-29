@@ -1,0 +1,72 @@
+LocationID,Borough,Zone,median_household_income,poverty_rate,minority_population_pct,zero_car_household_pct,total_population,transit_dependence_index
+1,Manhattan,Financial District North,145000,0.08,0.28,0.82,70437,52.4
+2,Manhattan,Financial District South,152000,0.07,0.26,0.84,46475,53.2
+3,Manhattan,Midtown Center,138000,0.09,0.32,0.8,56226,51.6
+4,Manhattan,Midtown East,142000,0.08,0.29,0.79,54205,50.6
+5,Manhattan,Upper East Side South,165000,0.06,0.21,0.76,74222,48.0
+6,Manhattan,Upper East Side North,158000,0.07,0.23,0.75,71891,47.8
+7,Manhattan,Upper West Side South,148000,0.07,0.27,0.77,80295,49.0
+8,Manhattan,Upper West Side North,135000,0.09,0.31,0.74,48890,48.0
+9,Manhattan,Chelsea,132000,0.09,0.33,0.81,61954,52.2
+10,Manhattan,Greenwich Village,140000,0.08,0.27,0.83,46662,53.0
+11,Manhattan,SoHo,155000,0.07,0.25,0.85,54026,53.8
+12,Manhattan,Tribeca,185000,0.05,0.22,0.8,65208,50.0
+13,Manhattan,East Village,102000,0.14,0.41,0.78,46534,52.4
+14,Manhattan,Lower East Side,58000,0.24,0.65,0.72,53254,52.8
+15,Manhattan,East Harlem South,39000,0.28,0.82,0.76,70845,56.8
+16,Manhattan,East Harlem North,34000,0.31,0.86,0.77,66752,58.6
+17,Manhattan,Central Harlem South,52000,0.22,0.79,0.74,54097,53.2
+18,Manhattan,Central Harlem North,46000,0.25,0.83,0.73,68481,53.8
+19,Manhattan,Washington Heights South,51000,0.21,0.78,0.71,77067,51.0
+20,Manhattan,Washington Heights North,48000,0.23,0.8,0.7,45753,51.2
+21,Manhattan,Inwood,45000,0.24,0.81,0.68,76926,50.4
+22,Brooklyn,Brooklyn Heights,142000,0.07,0.25,0.65,61538,41.8
+23,Brooklyn,DUMBO,168000,0.06,0.24,0.63,49728,40.2
+24,Brooklyn,Park Slope,136000,0.08,0.28,0.58,43630,38.0
+25,Brooklyn,Williamsburg North,115000,0.12,0.35,0.62,70088,42.0
+26,Brooklyn,Williamsburg South,42000,0.32,0.55,0.6,49607,48.8
+27,Brooklyn,Bedford,62000,0.21,0.76,0.59,41560,43.8
+28,Brooklyn,Stuyvesant Heights,56000,0.23,0.81,0.57,41691,43.4
+29,Brooklyn,Crown Heights North,58000,0.22,0.77,0.6,66467,44.8
+30,Brooklyn,Crown Heights South,51000,0.24,0.79,0.58,58422,44.4
+31,Brooklyn,Bushwick North,54000,0.23,0.74,0.58,65135,44.0
+32,Brooklyn,Bushwick South,48000,0.26,0.77,0.57,62581,44.6
+33,Brooklyn,East New York,38000,0.31,0.88,0.52,56195,43.6
+34,Brooklyn,Brownsville,31000,0.36,0.92,0.56,70612,48.0
+35,Brooklyn,Sunset Park West,56000,0.22,0.69,0.51,50991,39.4
+36,Brooklyn,Sunset Park East,52000,0.24,0.72,0.5,56717,39.6
+37,Brooklyn,Bay Ridge,74000,0.15,0.42,0.45,65870,33.0
+38,Brooklyn,Flatbush / Ditmas Park,65000,0.18,0.68,0.54,58911,39.6
+39,Brooklyn,Coney Island,39000,0.29,0.62,0.48,66936,40.4
+40,Brooklyn,Canarsie,68000,0.14,0.85,0.35,57552,26.6
+41,Queens,Astoria,78000,0.14,0.46,0.55,50523,38.6
+42,Queens,Long Island City,112000,0.11,0.44,0.64,32737,42.8
+43,Queens,Sunnyside,72000,0.15,0.58,0.56,37653,39.6
+44,Queens,Woodside,66000,0.16,0.65,0.53,39313,38.2
+45,Queens,Jackson Heights,58000,0.2,0.78,0.55,33654,41.0
+46,Queens,Corona,49000,0.25,0.86,0.52,37785,41.2
+47,Queens,Flushing,54000,0.22,0.77,0.48,34227,37.6
+48,Queens,Forest Hills,86000,0.11,0.38,0.46,39005,32.0
+49,Queens,Jamaica,52000,0.23,0.84,0.44,48663,35.6
+50,Queens,South Jamaica,46000,0.26,0.89,0.38,41350,33.2
+51,Queens,Bayside,92000,0.09,0.45,0.22,41494,16.8
+52,Queens,Far Rockaway,44000,0.27,0.78,0.38,37156,33.6
+53,Queens,JFK Airport,95000,0.1,0.5,0.5,2500,34.0
+54,Queens,LaGuardia Airport,95000,0.1,0.5,0.5,2500,34.0
+55,Bronx,Mott Haven,28000,0.39,0.94,0.68,43552,56.4
+56,Bronx,Hunts Point,26000,0.41,0.96,0.65,42619,55.4
+57,Bronx,Melrose,29000,0.38,0.93,0.69,32107,56.6
+58,Bronx,Morrisania,27000,0.4,0.95,0.67,45499,56.2
+59,Bronx,Highbridge,32000,0.34,0.92,0.64,31921,52.0
+60,Bronx,Concourse,35000,0.32,0.91,0.66,37106,52.4
+61,Bronx,University Heights,33000,0.35,0.93,0.63,51748,51.8
+62,Bronx,Fordham / Belmont,34000,0.33,0.9,0.62,43359,50.4
+63,Bronx,Soundview,39000,0.28,0.89,0.54,41366,43.6
+64,Bronx,Parkchester,52000,0.21,0.82,0.55,44430,41.4
+65,Bronx,Riverdale,96000,0.1,0.35,0.34,48228,24.4
+66,Bronx,Pelham Bay,68000,0.16,0.55,0.32,46623,25.6
+67,Staten Island,St. George,64000,0.19,0.58,0.44,33497,34.0
+68,Staten Island,Stapleton,58000,0.22,0.64,0.41,28770,33.4
+69,Staten Island,New Dorp,84000,0.11,0.32,0.24,35570,18.8
+70,Staten Island,Great Kills,96000,0.08,0.22,0.18,34425,14.0
+71,Staten Island,Tottenville,104000,0.06,0.18,0.14,33063,10.8

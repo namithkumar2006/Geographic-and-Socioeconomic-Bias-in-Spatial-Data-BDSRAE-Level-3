@@ -1,0 +1,4 @@
+policy_regime,advantaged_wait_mins,disadvantaged_wait_mins,wait_time_gap_mins,disadvantaged_fulfillment_pct,disparate_impact_ratio,eeoc_80_percent_compliant,spatial_coverage_gini_index
+Baseline (Market),5.36,6.43,1.07,90.54,0.629,False,0.732
+Flat Subsidy ($2.50),5.19,6.22,1.03,92.54,0.724,False,0.732
+Proposed Equity Policy,5.58,4.08,-1.5,97.84,1.444,True,0.679

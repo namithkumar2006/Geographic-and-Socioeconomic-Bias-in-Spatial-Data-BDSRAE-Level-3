@@ -29,13 +29,33 @@ This project delivers an end-to-end **Big Data Systems** and **Responsible AI** 
 3. **Equitable Policy Simulation:** Implements an **Equity-Weighted Dynamic Dispatch & Subsidy Policy** that eliminates statutory disparate impact ($DIR: 0.629 \rightarrow 1.444$) while preserving $93.8\%$ of platform operational revenue efficiency.
 
 ---
+## NYC Yellow Taxi Dataset Analysis
+
+The project additionally incorporates the NYC Taxi and Limousine Commission (TLC) Yellow Taxi Trip Records for January 2024.
+
+Unlike the synthetic rideshare dataset used in the distributed simulation, the Yellow Taxi dataset consists of actual recorded taxi trip observations. It provides an opportunity to examine real-world mobility patterns and complement the project's existing spatial disparity analysis.
+
+The analysis focuses on:
+
+1. **Trip Distribution:** Examining the distribution of taxi pickups and drop-offs across NYC taxi zones.
+2. **Temporal Patterns:** Understanding variations in taxi demand across different hours and time periods.
+3. **Spatial Mobility:** Identifying high-activity and low-activity pickup and drop-off locations.
+4. **Zone-Level Analysis:** Using pickup and drop-off location identifiers to associate trips with the official NYC Taxi Zone boundaries.
+5. **Exploratory Data Analysis:** Examining trip characteristics and identifying spatial and temporal patterns in actual taxi operations.
+6. **Separation of Analysis:** Maintaining the Yellow Taxi analysis separately from the synthetic rideshare simulation to distinguish observed transportation data from simulated platform behavior.
+
+Notebook: yellow_taxi_analysis/main.ipynb
+
+Data Source: NYC TLC Trip Record Data
+Dataset Period: January 2024
+Analytical Scope: Real-world Yellow Taxi trip distribution and spatial mobility patterns.
 
 ## Comparative Policy Simulation Scorecard
 
 | Policy Regime | Advantaged Wait | Disadvantaged Wait | Wait Time Gap | Disadv. Fulfillment | Disparate Impact Ratio (DIR) | EEOC 80% Compliant | Spatial Gini Index |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **Baseline (Market)** | 5.36 min | 6.43 min | +1.07 min | 90.54% | **0.629** | ❌ **NON-COMPLIANT** | 0.732 |
-| **Flat Subsidy (\$2.50)** | 5.19 min | 6.22 min | +1.03 min | 92.54% | **0.724** | ❌ **NON-COMPLIANT** | 0.732 |
+| **Baseline (Market)** | 5.36 min | 6.43 min | +1.07 min | 90.54% | **0.629** |  **NON-COMPLIANT** | 0.732 |
+| **Flat Subsidy (\$2.50)** | 5.19 min | 6.22 min | +1.03 min | 92.54% | **0.724** |  **NON-COMPLIANT** | 0.732 |
 | **Proposed Equity Policy** | **5.58 min** | **4.08 min** | **-1.50 min** | **97.84%** | **1.444** | ✅ **COMPLIANT** | **0.679** |
 
 ---
@@ -176,9 +196,11 @@ docker-compose up --build -d
 ---
 
 ## Deliverables Index
-- 📄 **Technical Report (3-5 Pages):** [`docs/technical_report.md`](docs/technical_report.md)
-- 📋 **Datasheet / Data Card:** [`docs/data_card.md`](docs/data_card.md)
-- 🎬 **3-Minute Demo Video Script & Storyboard:** [`docs/demo_video_script.md`](docs/demo_video_script.md)
-- 📓 **Results Analysis Notebook:** [`notebooks/results_analysis.ipynb`](notebooks/results_analysis.ipynb)
-- 🌐 **Interactive Disparity Dashboard:** [`docs/disparity_map_summary.html`](docs/disparity_map_summary.html)
-- 📊 **Publication-Quality Figures:** [`docs/figures/`](docs/figures/)
+
+- **Technical Report (3–5 Pages):** [docs/technical_report.md](https://github.com/namithkumar2006/Geographic-and-Socioeconomic-Bias-in-Spatial-Data-BDSRAE-Level-3/blob/main/docs/technical_report.md)
+- **Datasheet / Data Card:** [docs/data_card.md](https://github.com/namithkumar2006/Geographic-and-Socioeconomic-Bias-in-Spatial-Data-BDSRAE-Level-3/blob/main/docs/data_card.md)
+- **3-Minute Demo Video Script & Storyboard:** [docs/demo_video_script.md](https://github.com/namithkumar2006/Geographic-and-Socioeconomic-Bias-in-Spatial-Data-BDSRAE-Level-3/blob/main/docs/demo_video_script.md)
+- **Results Analysis Notebook:** [notebooks/results_analysis.ipynb](https://github.com/namithkumar2006/Geographic-and-Socioeconomic-Bias-in-Spatial-Data-BDSRAE-Level-3/blob/main/notebooks/results_analysis.ipynb)
+- **Yellow Taxi Analysis Notebook:** [yellow_taxi_analysis/yellow_taxi_analysis.ipynb](yellow_taxi_analysis/yellow_taxi_analysis.ipynb)
+- **Interactive Disparity Dashboard:** [docs/disparity_map_summary.html](https://github.com/namithkumar2006/Geographic-and-Socioeconomic-Bias-in-Spatial-Data-BDSRAE-Level-3/blob/main/docs/disparity_map_summary.html)
+- **Publication-Quality Figures:** [docs/figures/](https://github.com/namithkumar2006/Geographic-and-Socioeconomic-Bias-in-Spatial-Data-BDSRAE-Level-3/tree/main/docs/figures)
